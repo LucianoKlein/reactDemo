@@ -1,0 +1,18 @@
+.right {
+    float: right;
+}
+
+.list-group-item a {
+    margin-left: 10px;
+}
+a {
+    text-decoration: none;
+    -webkit-font-smoothing: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.item-edit {
+    outline: none;
+    border-width: 0 0 1px 0;
+}
