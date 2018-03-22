@@ -1,44 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ComponentHeader from '../components/header.jsx';
 
-// let ExampleApplication = React.Component({
-//     render: function() {
-//         let elapsed = Math.round(this.props.elapsed / 100);
-//         let seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0');
-//         let message = 'React has been successfully running for ' + seconds + 'seconds.';
-
-//         return React.DOM.p(null, message);
-//     }
-// });
-
-// let ExampleApplicationFactory = React.createFactory(ExampleApplication);
-
-
-// let start = new Date().getTime();
-class ExampleComponent extends React.Component {
-   constructor(props) {
-      super(props);
-      this.state = {
-
-      }
-   }
+class Index extends React.Component {
    render() {
-      let elapsed = Math.round(this.props.elapsed / 100);
-      let seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0');
-      let message = 'React has been successfully running for ' + seconds + 'second.';
+        return (
+            <div>
+                <ComponentHeader/>
+                <h2>页面主体内容</h2>
+            </div>
+        )
+   } 
+}
 
-      return <h1>Hello {seconds}</h1>;
-   }
-};
-let start = new Date().getTime();
-
-
-setInterval(function() {
-    
-    let currTime = new Date().getTime() - start;
-    ReactDOM.render(
-        // ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
-        <ExampleComponent elapsed={new Date().getTime() - start}/>,
-        document.getElementById('app')
-    );
-}, 50)
+ReactDOM.render(<Index/>, document.getElementById('app'));
