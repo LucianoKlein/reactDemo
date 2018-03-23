@@ -1,5 +1,6 @@
 import React from 'react';
 import BodyChild from '../components/bodychild.jsx';
+import PropTypes from 'prop-types';
 export default class BodyIndex extends React.Component {
     constructor() {
         super();
@@ -23,10 +24,16 @@ export default class BodyIndex extends React.Component {
         return (
             <main>
                 <h1>页面的主体内容</h1>
-                <p>{this.state.age}</p>
+                <p>接收到父页面的属性 userid: {this.props.userid} username: {this.props.username} </p>
+                <p>age: {this.state.age}</p>
                 <input type="button" value="提交" onClick={this.changeUserInfo.bind(this)}/>
                 <BodyChild handleChildValueChange={this.handleChildValueChange.bind(this)}/>
             </main>
         )
     }
 }
+
+BodyIndex.propTypes = {
+    userid: PropTypes.number,
+    username: PropTypes.string
+};

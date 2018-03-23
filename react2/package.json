@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --display-modules --display-reasons",
-    "run": "webpack --display-modules --display-reasons && webpack-dev-server"
+    "run": "webpack --display-modules --display-reasons && webpack-dev-server",
+    "serve": "webpack-dev-server"
   },
   "devDependencies": {
     "webpack": "^4.2.0"
@@ -16,6 +17,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^3.0.7",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack-cli": "^2.0.12",

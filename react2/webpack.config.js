@@ -25,7 +25,8 @@ module.exports = {
         index: "index.html",
         allowedHosts: [
             '*'
-        ]
+        ],
+        quiet: false
     },
     mode: "development",
     plugins: [
