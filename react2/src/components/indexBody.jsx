@@ -1,10 +1,19 @@
 import React from 'react';
 export default class BodyIndex extends React.Component {
+    componentWillMount() {
+        //定义你的逻辑就可以了
+        console.log("BodyIndex - componentWillMount");
+    }
+
+    componentDidMount() {
+        console.log("BodyIndex - componentDidMount");
+    }
+
     render() {
         let userName = '';
         let boolInput = false;
         //comments 
-        let html = "imooc&nbsp;lesson";
+        let html = "hah&nbsp;aha";
         return (
             <main>
                 <h1>这里是Body</h1>
