@@ -1,6 +1,9 @@
 import React from 'react';
 import BodyChild from '../components/bodychild.jsx';
 import PropTypes from 'prop-types';
+const defaultProps = {
+    username: '这是一个默认值'
+}
 export default class BodyIndex extends React.Component {
     constructor() {
         super();
@@ -37,3 +40,6 @@ BodyIndex.propTypes = {
     userid: PropTypes.number.isRequired,
     username: PropTypes.string
 };
+
+BodyIndex.defaultProps = defaultProps;
+
