@@ -14,7 +14,8 @@ class Index extends React.Component {
     componentDidMount() {
         console.log("Index - componentDidMount");
     }
-   render() {
+
+    render() {
         return (
             <div>
                 <ComponentHeader/>
