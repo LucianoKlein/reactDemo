@@ -18,8 +18,7 @@ export default class BodyIndex extends React.Component {
         return (
             <main>
                 <h1>页面的主体内容</h1>
-                <p>{this.state.username}</p>
-                <p>{this.state.age}</p>
+                <p>{this.props.userid}</p>
             </main>
         )
     }
