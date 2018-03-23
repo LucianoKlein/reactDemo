@@ -34,6 +34,6 @@ export default class BodyIndex extends React.Component {
 }
 
 BodyIndex.propTypes = {
-    userid: PropTypes.number,
+    userid: PropTypes.number.isRequired,
     username: PropTypes.string
 };
