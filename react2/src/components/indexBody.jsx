@@ -30,7 +30,7 @@ export default class BodyIndex extends React.Component {
                 <p>接收到父页面的属性 userid: {this.props.userid} username: {this.props.username} </p>
                 <p>age: {this.state.age}</p>
                 <input type="button" value="提交" onClick={this.changeUserInfo.bind(this)}/>
-                <BodyChild handleChildValueChange={this.handleChildValueChange.bind(this)}/>
+                <BodyChild {...this.props} handleChildValueChange={this.handleChildValueChange.bind(this)}/>
             </main>
         )
     }
